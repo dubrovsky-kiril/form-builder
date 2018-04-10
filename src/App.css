@@ -1,0 +1,88 @@
+/* Global */
+a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a.active {
+  font-weight: bold;
+}
+
+label {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+/* Common */
+.load-from-url-form, .load-local-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input input {
+  min-width: 250px;
+  padding: 8px;
+  font-size: 14px;
+  margin-right: 15px;
+  border: none;
+  border: 1px solid grey;
+}
+
+.input .required {
+  border-left-color: green;
+  border-left-width: 4px;
+}
+
+/* App component */
+.App {
+  margin: 10px 25px;
+}
+
+.links, .upload-form {
+  padding: 15px 0;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.upload-form {
+  height: 70px;
+}
+
+/* LoadFromUrlForm component */
+.load-from-url-form {
+  max-width: 300px;
+}
+
+.load-from-url-form input {
+  margin-bottom: 4px;
+}
+
+.load-from-url-form button {
+  max-width: 75px;
+}
+
+/* Widget component */
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Row component */
+.row {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+/* Section component */
+.section {
+  margin-bottom: 40px;
+}
