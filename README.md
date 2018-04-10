@@ -1,5 +1,5 @@
 # form-builder
-Test assignment for reading JSON file and build UI base on provided example.
+Test assignment for reading JSON file and building UI based on provided example. 
 
 # Prerequisites
 - [git](https://git-scm.com/)
