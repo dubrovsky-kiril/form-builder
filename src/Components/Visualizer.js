@@ -1,9 +1,7 @@
 import React from 'react';
 import {Widget} from './Widget'
 
-export const Visualizer = ({data}) => {
-  const {widgets} = data;
-
+export const Visualizer = ({data: {widgets}}) => {
   return (
     <div>
       {widgets.map(widget => (

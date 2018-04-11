@@ -15,7 +15,7 @@ export const CurrencyInput = ({data: {label, value, required, symbol, precision}
       <div className="input-icon">
         <i>{currencies[symbol] || ''}</i>
         <input
-          className={required ? 'active' : ''}
+          className={required ? 'required' : ''}
           type='text'
           defaultValue={precision ? addPrecision(addComas(value)) : addComas(value)}
         />
