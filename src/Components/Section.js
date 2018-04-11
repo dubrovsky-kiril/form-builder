@@ -1,9 +1,7 @@
 import React from 'react';
 import {Row} from './Row';
 
-export const Section = ({data}) => {
-  const {header, columns, items} = data;
-
+export const Section = ({data: {header, columns, items}}) => {
   const rowsCount = Math.ceil(items.length / columns);
 
   const rowsInitialStructure = Array(rowsCount).fill([]);

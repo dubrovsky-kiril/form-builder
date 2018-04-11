@@ -1,8 +1,6 @@
 import React from 'react';
 
-export const DefaultInput = ({data}) => {
-  const {label, value, required} = data;
-
+export const DefaultInput = ({data: {label, value, required}}) => {
   return (
     <div className='input'>
       <label>{label}</label>

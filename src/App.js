@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import {LocalLoadForm} from './Components/LoadForms/LocalLoadForm';
 import {LoadFromUrlForm} from './Components/LoadForms/LoadFromUrlForm';
 import {Visualizer} from './Components/Visualizer';
+import {Tab} from './Components/Tab'
 import './App.css';
 
 class App extends PureComponent {
@@ -24,19 +25,19 @@ class App extends PureComponent {
 
     return (
       <div className="App">
-        <div className="links">
-          <a
-            onClick={this.toggleLocalLoad}
+        <div className="tabs">
+          <Tab
+            loadToggleCb={this.toggleLocalLoad}
             className={isLocalLoad ? 'active' : ''}
           >
             load local json
-          </a>
-          <a
-            onClick={this.toggleLoadFromUrl}
+          </Tab>
+          <Tab
+            loadToggleCb={this.toggleLoadFromUrl}
             className={!isLocalLoad ? 'active' : ''}
           >
             load json from url
-          </a>
+          </Tab>
         </div>
         <div className="upload-form">
           {isLocalLoad
