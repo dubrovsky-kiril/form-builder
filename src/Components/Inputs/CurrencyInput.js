@@ -6,8 +6,8 @@ export const CurrencyInput = ({data: {label, value, required, symbol, precision}
     USD: '$'
   };
 
-  const addComasToNumber = number => number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  const addPrecisionToNumber = number => ([number, '.'].join('')).padEnd(number.length + 1 + precision, Array(precision).join('0'))
+  const addComas = number => number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  const addPrecision = number => ([number, '.'].join('')).padEnd(number.length + 1 + precision, Array(precision).join('0'))
 
   return (
     <div className='input'>
@@ -17,7 +17,7 @@ export const CurrencyInput = ({data: {label, value, required, symbol, precision}
         <input
           className={required ? 'active' : ''}
           type='text'
-          defaultValue={precision ? addPrecisionToNumber(addComasToNumber(value)) : addComasToNumber(value)}
+          defaultValue={precision ? addPrecision(addComas(value)) : addComas(value)}
         />
       </div>
     </div>
