@@ -1,6 +1,6 @@
 # form-builder
 Test assignment for reading JSON file and building UI based on provided example.
-Test assignment description is in "Task" folder.
+Test assignment description is in "task" folder.
 
 # Prerequisites
 - [git](https://git-scm.com/)
